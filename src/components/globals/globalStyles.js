@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import { setColor, setFont } from '../../styles';
 
 const Globals = createGlobalStyle`
     * {
@@ -9,11 +9,11 @@ const Globals = createGlobalStyle`
     }
     
     body {
-      font-family: 'Lato', sans-serif;
+      ${setFont.main}
       font-weight: bold;
       font-size: 100%;
-      color: #222;
-      background: #fff;    
+      color: ${setColor.mainBlack};
+      background: ${setColor.mainWhite};    
     }
     
     h1 {
